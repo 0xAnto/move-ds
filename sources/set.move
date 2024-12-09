@@ -1,8 +1,6 @@
 module move_ds::set {
     use aptos_std::table::{Self, Table};
     use std::vector;
-    #[test_only]
-    use ds::set;
 
     /// Key not found in the set
     const E_NOT_FOUND: u64 = 1;
