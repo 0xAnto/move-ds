@@ -1,7 +1,7 @@
 [package]
 name = "MoveDS"
 version = "1.0.0"
-authors = []
+authors = ["0xAnto"]
 
 [addresses]
 move_ds = "0x13edcc3270df64177ed2202e4441ebf630bc718d4cff89dc913198d3d3070a42"
@@ -9,7 +9,7 @@ move_ds = "0x13edcc3270df64177ed2202e4441ebf630bc718d4cff89dc913198d3d3070a42"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-framework.git"
-rev = "mainnet"
+rev = "testnet"
 subdir = "aptos-framework"
 
 [dev-dependencies]
