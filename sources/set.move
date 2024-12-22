@@ -118,6 +118,20 @@ module move_ds::set {
         self
     }
 
+    /// Iterates over elements in reverse, returning both the key and its value from the table.
+    public inline fun for_each_reverse_mut<K: copy + drop, V>(
+        self: &mut Set<K, V>,
+        f: |K, V|
+    ): &mut Set<K,V> {
+        while (self.size > 0) {
+            let key = vector::pop_back(&mut self.keys);
+            let value = table::remove(&mut self.elems, key);
+            f(key, value);
+            self.size = self.size - 1;
+        };
+        self
+    }
+
     /// Apply the function to a reference of each element in the vector.
     public inline fun for_each_ref<K: copy + drop, V>(
         self: &Set<K, V>,
