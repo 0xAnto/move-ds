@@ -1,10 +1,10 @@
 [package]
-name = "Move-DS"
+name = "MoveDS"
 version = "1.0.0"
 authors = []
 
 [addresses]
-move_ds = "0x769b5eb4fb90422110fd32430422d0c1117022501fc7bbba187dd213fa4c8807"
+move_ds = "0x13edcc3270df64177ed2202e4441ebf630bc718d4cff89dc913198d3d3070a42"
 [dev-addresses]
 
 [dependencies.AptosFramework]
